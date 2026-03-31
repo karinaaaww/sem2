@@ -4,7 +4,7 @@
 
 RightTriangle::RightTriangle(const double side1, const double side2) {
     if (side1 <= 0 || side2 <= 0) {
-        std::cout<<"Error. Sides must be positive."<<std::endl;
+        std::cout<<"Ошибка!"<<std::endl;
         exit(1);
     }
     this->side1 = side1;
