@@ -6,7 +6,7 @@
 #include "DichotomySolver.h"
 /**
  * @brief Считывает значение с клавиатуры
- * @param report - строка информации
+ * @param report строка информации
  * @return считанное значение
  */
 double getValue(std::string report = "");
@@ -40,7 +40,7 @@ double getValue(std::string report)
     std::cin >> value;
     if (std::cin.fail())
     {
-        std::cout << "Ошибка, введено неверное значение.\n";
+        std::cout << "Ошибк! Введено неверное значение.\n";
         exit(1);
     }
     return value;
