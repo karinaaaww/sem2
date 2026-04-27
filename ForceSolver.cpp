@@ -6,12 +6,12 @@ double ForceSolver::solve(const double a, const double b, const double step, dou
 {
     if (a >= b)
     {
-        std::cout << "Ошибка. Левая граница должна быть меньше правой.\n";
+        std::cout << "Ошибка! Левая граница должна быть меньше правой.\n";
         exit(1);
     }
     if (step <= 0)
     {
-        std::cout << "Ошибка. Шаг должен быть положительным.\n";
+        std::cout << "Ошибка! Шаг должен быть положительным.\n";
         exit(1);
     }
     double x = a;
@@ -23,6 +23,6 @@ double ForceSolver::solve(const double a, const double b, const double step, dou
         }
         x += step;
     }
-    std::cout << "Ошибка. Корень на заданном отрезке не найден.\n";
+    std::cout << "Ошибка! Корень на заданном отрезке не найден.\n";
     exit(1);
 }
